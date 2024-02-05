@@ -6,13 +6,6 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
-  // moving(){
-  //   window.addEventListener('scroll' , ()=>{
-  //   document.querySelector('nav')?.classList.remove('py-3');
-  //   })
-  // }
-
   scrolled: boolean = false;
 
   @HostListener('window:scroll', [])
