@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #263545;
+  transition: 0.6s padding ;
+  padding: 22px;
+}
+
+.activeLink {
+  background-color: #1abc9c;
+  border-radius: 5px;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar.scrolled {
+  padding: 10px; 
+}

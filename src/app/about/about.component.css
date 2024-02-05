@@ -1,0 +1,16 @@
+.about {
+  background-color: #1abc9c;
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftLine,
+.rightLine {
+  width: 80px;
+  height: 4px;
+  background-color: #fff;
+}
