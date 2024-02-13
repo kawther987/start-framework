@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
+  iconColor: string = '#2c3e50';
 
-  showEmailLabel: boolean = false;  
+  showEmailLabel: boolean = false;
 
   showAgeLabel: boolean = false;
 
@@ -15,11 +16,11 @@ export class ContactComponent {
 
   showNameLabel: boolean = false;
 
-  nameInput:string = '';
+  nameInput: string = '';
 
-  ageInput:string = '';
+  ageInput: string = '';
 
-  emailInput:string = '';
+  emailInput: string = '';
 
-  passInput:string = '';
+  passInput: string = '';
 }

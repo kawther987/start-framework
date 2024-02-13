@@ -1,32 +1,12 @@
-import {  Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
 })
-export class PortfolioComponent   {
-  // imgSrc:any = ''
-  // showLayer(e:any):void{
-  //   // this.imgSrc = e.target.src ;
-  //   // console.log(this.imgSrc);
-  //   document.querySelector('.mo1')?.classList.remove('d-none')
-  // }
-  // showLayer2():void{
-  //   document.querySelector('.mo2')?.classList.remove('d-none')
-  // }
-  // showLayer3():void{
-  //   document.querySelector('.mo3')?.classList.remove('d-none')
-  // }
-  // hideLayer(){
-  //     document.querySelector('.mo1')?.classList.add('d-none')
-  // }
-  // hideLayer2(){
-  //     document.querySelector('.mo2')?.classList.add('d-none')
-  // }
-  // hideLayer3(){
-  //     document.querySelector('.mo3')?.classList.add('d-none')
-  // }
+export class PortfolioComponent {
+  iconColor: string = '#2c3e50';
   images = [
     { src: './assets/images/poert1.png', alt: 'Image 1' },
     { src: './assets/images/port2.png', alt: 'Image 2' },
@@ -44,9 +24,10 @@ export class PortfolioComponent   {
     this.showModal = true;
   }
 
-  closeModal(): void {
-    this.showModal = false;
-    this.selectedImage = null;
+  closeModal(e: MouseEvent): void {
+    if (e.target === e.currentTarget) {
+      this.showModal = false;
+      this.selectedImage = null;
+    }
   }
-  
 }

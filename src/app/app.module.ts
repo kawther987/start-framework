@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     PortfolioComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,

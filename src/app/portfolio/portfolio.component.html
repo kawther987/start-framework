@@ -35,7 +35,7 @@
 <!-- *******************************Modal******************************* -->
 <div
   class="model position-fixed bg-primary bg-opacity-25 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-  (click)="closeModal()"
+  (click)="closeModal($event)"
   *ngIf="showModal == true"
 >
   <img
@@ -49,11 +49,7 @@
 <section class="portfolio pt-5">
   <div class="container py-5">
     <h1 class="text-center fw-bold">PORTFOLIO COMPONENT</h1>
-    <div class="d-flex align-items-center justify-content-center">
-      <div class="leftLine me-3"></div>
-      <i class="z-3 fas fa-star py-3"></i>
-      <div class="rightLine ms-3"></div>
-    </div>
+    <app-star [color]="iconColor"></app-star>
     <div class="row g-4">
       <div class="col-md-4" *ngFor="let image of images">
         <div class="overflow-hidden position-relative rounded-3">

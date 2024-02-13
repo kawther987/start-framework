@@ -4,9 +4,3 @@
 .home img {
   width: 250px;
 }
-.leftLine,
-.rightLine {
-  width: 80px;
-  height: 4px;
-  background-color: #fff;
-}
